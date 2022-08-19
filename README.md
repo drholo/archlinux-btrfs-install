@@ -264,6 +264,10 @@ Check [Installation guide](https://wiki.archlinux.org/title/Installation_guide) 
     [root@archiso /]# echo "console-mode max" >> /efi/loader/loader.conf
     [root@archiso /]# echo "editor   no" >> /efi/loader/loader.conf
     ```
+* Enable `network-manager`
+    ```
+    [root@archiso /]# systemctl enable NetworkManager
+    ```
 * Make your first snapshot of `/home` partition 
     ```
     [root@archiso /]# btrfs subvolume snapshot /home /.snapsbots/home-$(date "+%Y%m%d%H%M%S")
