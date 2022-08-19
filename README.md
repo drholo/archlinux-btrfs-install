@@ -268,6 +268,10 @@ Check [Installation guide](https://wiki.archlinux.org/title/Installation_guide) 
     ```
     [root@archiso /]# systemctl enable NetworkManager
     ```
+* Install `ssh`-server (Optionally)
+    ```
+    [root@archiso /]# pacman -S openssh 
+    ```
 * Make your first snapshot of `/home` partition 
     ```
     [root@archiso /]# btrfs subvolume snapshot /home /.snapsbots/home-$(date "+%Y%m%d%H%M%S")
